@@ -6,4 +6,4 @@
   file: path=/usr/share/lightdm/lightdm.conf.d/ state=directory owner=root group=root mode=0755
 
 - name: Enable lightdm
-  file: src=/etc/sv/lightdm dest=/var/service/ligthdm state=link
+  file: src=/etc/sv/lightdm dest=/var/service/lightdm state=link
