@@ -1,0 +1,9 @@
+---
+- name: Install lightdm
+  xbps: pkg=lightdm state=present
+
+- name: Create override directory
+  file: path=/usr/share/lightdm/lightdm.conf.d/ state=directory owner=root group=root mode=0755
+
+- name: Enable lightdm
+  file: src=/etc/sv/lightdm dest=/var/service/ligthdm state=link
